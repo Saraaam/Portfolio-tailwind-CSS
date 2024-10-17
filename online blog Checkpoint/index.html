@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Blog en Ligne</title>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- En-tête -->
+    <header class="bg-black text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Brincy</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">Accueil</a></li>
+                    <li><a href="#featured" class="hover:underline">Articles Vedettes</a></li>
+                    <li><a href="#categories" class="hover:underline">Catégories</a></li>
+                    <li><a href="#recent" class="hover:underline">Articles Récents</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section des articles vedettes -->
+    <section class="py-8" id="featured">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-4">Articles Vedettes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <img src="RES/Capture d’écran_17-10-2024_23207_anywhereweroam.com.jpeg" alt="Article 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Britain, London</h3>
+                        <p class="text-gray-600">EFree Things To Do In London - A Curated List By Locals.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <img src="RES/Capture1.PNG" alt="Article 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Italy, Dolomites</h3>
+                        <p class="text-gray-600">7-day Dolomites Itinerary - A Complete Road Trip Guide</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <img src="RES/Capture2.PNG" alt="Article 3" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Morocco</h3>
+                        <p class="text-gray-600">10-Day Morocco Itinerary - Road Trip Guide + Map</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section des catégories -->
+    <section class="py-8" id="categories">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-4">Catégories</h2>
+            <div class="flex flex-wrap space-x-2">
+                <span class="bg-blue-200 text-blue-800 px-3 py-1 rounded-full">Technologie</span>
+                <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full">Santé</span>
+                <span class="bg-red-200 text-red-800 px-3 py-1 rounded-full">Style de Vie</span>
+                <span class="bg-purple-200 text-purple-800 px-3 py-1 rounded-full">Voyage</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section des articles récents -->
+    <section class="py-8" id="recent">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-4">Articles Récents</h2>
+            <ul class="space-y-4">
+                <li>
+                    <h3 class="font-bold">Morocco</h3>
+                    <p class="text-gray-600">Date de publication :17/10/2024</p>
+                </li>
+                <li>
+                    <h3 class="font-bold">Italy, Dolomites</h3>
+                    <p class="text-gray-600">Date de publication : 18/10/2024</p>
+                </li>
+                <li>
+                    <h3 class="font-bold">Britain, London</h3>
+                    <p class="text-gray-600">Date de publication : 18/10/2024</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Formulaire d'abonnement à la lettre d'information -->
+    <section class="py-8">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-4">Abonnez-vous à notre newsletter</h2>
+            <form class="bg-white p-6 rounded shadow">
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-bold mb-2">Adresse Électronique</label>
+                    <input type="email" id="email" class="w-full p-2 border rounded" placeholder="Entrez votre email" required>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white p-2 rounded">S'abonner</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <p>&copy; 2024 Brincy. Tous droits réservés.</p>
+            <div class="flex space-x-4">
+                <a href="https://www.facebook.com/sara.aamoum1/" class="hover:text-blue-400">Facebook</a>
+                <a href="https://www.linkedin.com/in/sara-aamoum-b8041014a/" class="hover:text-blue-400">linkedin</a>
+                <a href="https://www.instagram.com/sara.aamoum/" class="hover:text-blue-400">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
